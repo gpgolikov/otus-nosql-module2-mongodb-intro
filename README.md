@@ -254,7 +254,7 @@ Enter password for mongo user:
 2022-11-30T16:17:17.353+0000	[########################] otus.trades	232MB/232MB (100.0%)
 2022-11-30T16:17:17.353+0000	1000001 document(s) imported successfully. 0 document(s) failed to import.
 ```
-И выполним анализ запроса с группировкой по языкам:
+И выполним анализ запроса поиска по цене
 ```
 otus> db.trades.explain("executionStats").find({price: 110})
 {
