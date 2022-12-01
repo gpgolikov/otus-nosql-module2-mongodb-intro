@@ -52,7 +52,7 @@ otus> db.meteorite_landings.countDocuments()
 
 ## Выборка данных
 
-Отсортирую данные по имени метеорита и выгружу первые 5 документов
+Отсортирую данные по имени метеорита и выгружу первые 3 документа
 ```
 otus> db.meteorite_landings.find().limit(3).sort({"name":1})
 [
